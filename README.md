@@ -50,7 +50,7 @@ brew install ffmpeg
 
 ```bash
 git clone https://github.com/FastPix/Video-Quality-Benchmark-Tool.git
-cd video-quality-benchmark
+cd Video-Quality-Benchmark-Tool
 
 python3 -m venv venv
 source venv/bin/activate
