@@ -1,4 +1,4 @@
-# 🎥 Video Quality Benchmark Tool
+# Video Quality Benchmark Tool
 
 A frame-level video quality benchmarking tool built using Python + FFmpeg (libvmaf).
 
@@ -6,28 +6,28 @@ This tool performs deep objective quality analysis between a **source** video an
 
 ---
 
-# 🚀 Features
+# Features
 
-## 🎯 Video Quality Metrics
+## Video Quality Metrics
 - VMAF (Average, Min, Std Dev, Worst Frame)
 - PSNR (Average, Std Dev, Worst Frame)
 - Global SSIM
 - Frame-level SSIM analysis
 
-## 🔬 Advanced Frame Analysis
+## Advanced Frame Analysis
 - SSIM variance tracking
 - Edge retention ratio & variance
 - Noise difference & variance
 - Temporal flicker score & variance
 - Motion stability score & variance
 
-## 🔊 Audio Analysis
+## Audio Analysis
 - Audio sync lag (samples)
 - Audio sync lag (milliseconds)
 
 ---
 
-# 🛠 Requirements
+# Requirements
 
 - Python 3.9+
 - FFmpeg compiled with libvmaf
@@ -46,7 +46,7 @@ brew install ffmpeg
 
 ---
 
-# 📦 Installation
+# Installation
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/video-quality-benchmark.git
@@ -60,35 +60,42 @@ pip install -r requirements.txt
 
 ---
 
-# 📁 Input File Structure
+# Input File Structure
 
-This repository includes two empty folders:
+This repository includes two folders with demo video files:
 
 ```
 source/
 encoded/
 ```
 
-Place your videos as follows:
+- `source/` contains a sample reference video.
+- `encoded/` contains a sample encoded/transcoded video.
 
-- Put the original reference video inside `source/`
-- Put the encoded/transcoded video inside `encoded/`
+## Using Your Own Videos
 
-Example:
+To run the benchmark on your own videos:
+
+1. Replace the demo file inside `source/` with your reference video.
+2. Replace the demo file inside `encoded/` with your encoded/transcoded video.
+3. Rename your files to match the existing filenames.
+
+Example structure:
 
 ```
 source/source.mp4
 encoded/encoded.mp4
 ```
 
-Both videos should ideally have:
-- Same resolution
-- Same frame rate
-- Same duration
+Important:
+- Keep the same filenames (`source.mp4` and `encoded.mp4`)  
+- Both videos should ideally have the same resolution  
+- Both videos should have the same frame rate  
+- Both videos should have similar duration  
 
 ---
 
-# ▶️ Run Benchmark
+# Run Benchmark
 
 ```bash
 python video_benchmark.py \
