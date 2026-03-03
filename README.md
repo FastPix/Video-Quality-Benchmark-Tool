@@ -49,7 +49,7 @@ brew install ffmpeg
 # Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/video-quality-benchmark.git
+git clone https://github.com/FastPix/Video-Quality-Benchmark-Tool.git
 cd video-quality-benchmark
 
 python3 -m venv venv
