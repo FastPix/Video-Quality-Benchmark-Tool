@@ -252,7 +252,7 @@ def main():
     src_frames = extract_frames(args.source, TMP_SRC, "src")
     enc_frames = extract_frames(args.encoded, TMP_ENC, "enc")
 
-   print("Running comprehensive video quality benchmark...")
+    print("Running comprehensive video quality benchmark...")
 
     results = {
         "video_quality": {
@@ -266,7 +266,7 @@ def main():
     with open(args.output, "w") as f:
         json.dump(results, f, indent=4)
 
-    print("\n🏆 Video Quality Benchmark Complete")
+    print("\n🏆 VIDEO QUALITY BENCHMARK COMPLETE")
     print(json.dumps(results, indent=4))
 
 if __name__ == "__main__":
