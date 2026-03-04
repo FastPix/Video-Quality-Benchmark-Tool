@@ -58,8 +58,8 @@ Or, for other platforms, follow the official FFmpeg documentation to enable libv
 # Installation
 
 ```bash
-git clone https://github.com/FastPix/Video-Quality-Benchmark-Tool.git
-cd Video-Quality-Benchmark-Tool
+git clone https://github.com/FastPix/video-quality-benchmark-tool.git
+cd video-quality-benchmark-tool
 
 python3 -m venv venv
 source venv/bin/activate
