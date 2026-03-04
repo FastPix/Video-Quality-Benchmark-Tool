@@ -38,11 +38,20 @@ Verify FFmpeg:
 ffmpeg -filters | grep vmaf
 ```
 
+
 If missing (macOS):
 
 ```bash
 brew install ffmpeg
 ```
+
+To ensure FFmpeg is compiled with libvmaf (required for VMAF metrics):
+
+```bash
+brew install ffmpeg --with-libvmaf
+```
+
+Or, for other platforms, follow the official FFmpeg documentation to enable libvmaf during compilation.
 
 ---
 
@@ -62,6 +71,7 @@ pip install -r requirements.txt
 
 # Input File Structure
 
+
 This repository includes two folders with demo video files:
 
 ```
@@ -72,13 +82,16 @@ encoded/
 - `source/` contains a sample reference video.
 - `encoded/` contains a sample encoded/transcoded video.
 
+**Note:** These are demo files for testing. For real benchmarking, upload your own videos to these folders and rename them as described below.
+
 ## Using Your Own Videos
 
 To run the benchmark on your own videos:
 
+
 1. Replace the demo file inside `source/` with your reference video.
 2. Replace the demo file inside `encoded/` with your encoded/transcoded video.
-3. Rename your files to match the existing filenames.
+3. **Rename your files to match the existing filenames.**
 
 Example structure:
 
@@ -87,11 +100,23 @@ source/source.mp4
 encoded/encoded.mp4
 ```
 
-Important:
-- Keep the same filenames (`source.mp4` and `encoded.mp4`)  
-- Both videos should ideally have the same resolution  
-- Both videos should have the same frame rate  
-- Both videos should have similar duration  
+
+**Important:**
+- Keep the same filenames (`source.mp4` and `encoded.mp4`)
+- Both videos should ideally have the same resolution
+- Both videos should have the same frame rate
+- Both videos should have similar duration
+# Run Benchmark
+
+---
+
+# Notes
+
+- **Processing Time:** Large video files will take significantly longer to process and analyze. Processing time depends on video length, resolution, and system performance.
+- **File Names:** Always rename your uploaded videos to `source.mp4` and `encoded.mp4` for the tool to work correctly.
+- **Demo Videos:** The `source/` and `encoded/` folders contain demo videos. Replace them with your own for real benchmarking.
+
+# Run Benchmark
 
 ---
 
