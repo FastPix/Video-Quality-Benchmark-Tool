@@ -71,7 +71,6 @@ pip install -r requirements.txt
 
 # Input File Structure
 
-
 This repository includes two folders with demo video files:
 
 ```
@@ -106,7 +105,6 @@ encoded/encoded.mp4
 - Both videos should ideally have the same resolution
 - Both videos should have the same frame rate
 - Both videos should have similar duration
-# Run Benchmark
 
 ---
 
@@ -116,7 +114,6 @@ encoded/encoded.mp4
 - **File Names:** Always rename your uploaded videos to `source.mp4` and `encoded.mp4` for the tool to work correctly.
 - **Demo Videos:** The `source/` and `encoded/` folders contain demo videos. Replace them with your own for real benchmarking.
 
-# Run Benchmark
 
 ---
 
